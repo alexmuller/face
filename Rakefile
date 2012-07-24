@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "face"
   gem.homepage = "http://github.com/alexmuller/face"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "A gem to interact with the Lambda Labs face recognition API"
+  gem.description = "Connects to the Mashape Lambda Labs face recognition API"
   gem.email = "alexlmuller@gmail.com"
   gem.authors = ["Alex Muller"]
   # dependencies defined in Gemfile
@@ -32,13 +32,13 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
+# require 'rcov/rcovtask'
+# Rcov::RcovTask.new do |test|
+#   test.libs << 'test'
+#   test.pattern = 'test/**/test_*.rb'
+#   test.verbose = true
+#   test.rcov_opts << '--exclude "gems/*"'
+# end
 
 task :default => :test
 
