@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alex Muller"]
   s.date = "2012-07-24"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Connects to the Mashape Lambda Labs face recognition API"
   s.email = "alexlmuller@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -19,11 +19,20 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "face.gemspec",
     "lib/face.rb",
+    "lib/mashape/exceptions/exception_constants.rb",
+    "lib/mashape/exceptions/mashape_client_exception.rb",
+    "lib/mashape/http/auth_util.rb",
+    "lib/mashape/http/http_client.rb",
+    "lib/mashape/http/token_util.rb",
+    "lib/mashape/http/url_utils.rb",
+    "lib/mashape/mashape_client.rb",
     "test/helper.rb",
     "test/test_face.rb"
   ]
@@ -31,7 +40,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "A gem to interact with the Lambda Labs face recognition API"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

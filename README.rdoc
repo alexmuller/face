@@ -1,6 +1,6 @@
 = face
 
-Description goes here.
+face is a gem to connect to http://api.lambdal.com/ via http://mashape.com/ and retrieve face recognition data. It works pretty much like the (no longer running) face.com API.
 
 == Contributing to face
  
